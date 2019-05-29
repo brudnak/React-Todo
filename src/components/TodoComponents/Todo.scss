@@ -1,0 +1,9 @@
+.TodoForm-wrapper {
+  form {
+    display: flex;
+    flex-direction: column;
+    label {
+      color: red;
+    }
+  }
+}
