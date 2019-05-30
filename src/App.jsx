@@ -9,7 +9,9 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <h2>Welcome to your Todo App!</h2>
+        <h1>
+          Todo App <i className='far fa-edit' />
+        </h1>
         <TodoList />
       </div>
     )

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import TodoForm from './TodoForm'
 import Todo from './Todo'
-import { tsImportEqualsDeclaration } from '@babel/types'
 
 class TodoList extends Component {
   constructor(props) {
@@ -39,16 +38,17 @@ class TodoList extends Component {
         key={todo.id}
         name={todo.todo}
         id={todo.id}
+        completed={todo.completed}
         toggleTodo={this.toggleTodo}
       />
     ))
     return (
-      <div>
-        <ul>{todos}</ul>
+      <div className='TodoList-wrapper'>
         <TodoForm
           addTodo={this.addTodo}
           deleteCompleted={this.deleteCompleted}
         />
+        <ul className='TodoList-ul'>{todos}</ul>
       </div>
     )
   }

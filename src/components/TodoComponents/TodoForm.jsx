@@ -29,9 +29,7 @@ class TodoForm extends Component {
     return (
       <div className='TodoForm-wrapper'>
         <form onSubmit={this.handleSubmit}>
-          <label htmlFor='todo'>New Todo:</label>
           <input
-            id='todo'
             type='text'
             placeholder='Enter todo here...'
             value={this.state.todo}
@@ -39,9 +37,15 @@ class TodoForm extends Component {
             name='todo'
             required
           />
-          <button type='submit'>Add Todo</button>
-          <button type='button' onClick={this.props.deleteCompleted}>
-            Clear Completed
+          <button type='submit' id='add'>
+            <i className='fas fa-plus' />
+          </button>
+          <button
+            type='button'
+            id='delete'
+            onClick={this.props.deleteCompleted}
+          >
+            <i className='fas fa-trash-alt' />
           </button>
         </form>
       </div>

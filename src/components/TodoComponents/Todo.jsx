@@ -1,9 +1,12 @@
 import React from 'react'
+import moment from 'moment'
 
 const Todo = props => {
   return (
-    <div onClick={() => props.toggleTodo(props.id)}>
-      <li>{props.name}</li>
+    <div className='Todo' onClick={() => props.toggleTodo(props.id)}>
+      <li className={`Todo-li ${props.completed ? ' Todo-completed' : ''}`}>
+        {props.name} <br /> <p>Created: {moment().format('MMM Do YY')}</p>
+      </li>
     </div>
   )
 }
