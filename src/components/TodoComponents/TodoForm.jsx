@@ -39,8 +39,10 @@ class TodoForm extends Component {
             name='todo'
             required
           />
-          <button>Add Todo</button>
-          <button>Clear Completed</button>
+          <button type='submit'>Add Todo</button>
+          <button type='button' onClick={this.props.deleteCompleted}>
+            Clear Completed
+          </button>
         </form>
       </div>
     )
