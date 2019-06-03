@@ -1,5 +1,9 @@
 # React-Todo
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b839bcf7-a0a5-4605-9e2f-4a030add30bc/deploy-status)](https://app.netlify.com/sites/react-todo-brud/deploys)
+
+## Student: Andrew Brudnak 💙
+
 - At this point you have become familiar with the DOM and have built out User Interfaces using HTML and CSS and some JavaScript using custom components. And you've even had some practice working with React at a basic level. Now we're going to start adding some functionality to that work-flow. It's one thing to be able to build UI components using react, but what about the interactivity of those components?
 
 ## Initializing the project.
@@ -19,7 +23,7 @@
 - Your todo data should be an array of objects that look a lot like this:
 
 ```js
-[
+;[
   {
     task: 'Organize Garage',
     id: 1528817077286,
@@ -30,7 +34,7 @@
     id: 1528817084358,
     completed: false
   }
-];
+]
 ```
 
 - The `task` field is the todo title that will be shown to the user.

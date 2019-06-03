@@ -1,0 +1,71 @@
+.TodoForm-wrapper {
+  width: 500px;
+  form {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    // flex-direction: column;
+    input {
+      width: 200px;
+      height: 25px;
+    }
+
+    button {
+      // margin-top: 5%;
+      width: 50px;
+      height: 50px;
+      background: #fff;
+      box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
+      border: unset;
+      border-radius: 10px;
+    }
+
+    #add {
+      color: #11f718;
+      cursor: pointer;
+    }
+
+    #delete {
+      color: #e91e63;
+      cursor: pointer;
+    }
+  }
+}
+
+.Todo {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  .Todo-li {
+    list-style: none;
+    // background-color: #fff;
+    // padding: 5% 0%;
+    // margin: 3% 0%;
+    width: 300px;
+    padding: 10px;
+    margin: 1rem;
+    box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
+    // text-align: center;
+    background-color: #fff;
+    border-radius: 3px;
+
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.TodoList-ul {
+  padding: 0;
+  width: 500px;
+}
+
+.Todo-completed {
+  $todo-bkg: #fff;
+  background-color: darken($todo-bkg, 25%) !important;
+  box-shadow: unset !important;
+  text-shadow: 0 -1px 0 darken(black, 10%);
+  text-decoration: line-through;
+}
